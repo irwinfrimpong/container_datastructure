@@ -1,0 +1,8 @@
+# container_datastructure
+Finding the most efficient data structure to implement for the container 
+
+Managing large amounts of data is an inevitable aspect of modern-day computing. Therefore, it is imperative to find ways in which these large sets of data can not only managed but managed in the most efficient way possible. In this project, one was tasked with implementing a container data structure that made use of an ArrayList and a Red Black Tree to store the elements. This was done in means of determining which of the two data structures would be more efficient in carrying out operations involving adding and search for elements. 
+
+Considering the constraint of not having duplicates in the Array List as well as maintaining a sorted Array List after each insertion, the Array List would have to be shifted after each insertion, depending on the index of the Array List that it is inserted in. This will cause its insertion operation to take on an O(N) for worst case runtime if elements are to be added to the front or middle of the Array List. For finding the Kth smallest element, because of indexing, the computer can linearly retrieve elements in an Array List when giving a specific index of an element to retrieve; giving the FindKth operation on the ArrayList a runtime of O(1). 
+
+On the other hand, since, a Red Black Tree is a balanced binary search tree, this balance is ensured by the rules of insertions involving rotations and recoloring to ensure that the number of black nodes on each path to a null node is consistent. As a result of such, all the operation performed (ie: Insertion and FindKth) will have an O(lgN).
